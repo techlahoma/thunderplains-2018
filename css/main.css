@@ -115,6 +115,15 @@ h2, .h2 {
     font-size: 2em;
 }
 
+button {
+   font-size: 1.2em;
+   padding: 10px 40px;
+   background: rgba(60, 15, 104, 0.7);
+   border: 0;
+   box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+   color: white;
+}
+   
 .intro {
     background: url('../img/header-bg.jpg') bottom center no-repeat;
     background-size: cover;
