@@ -115,7 +115,7 @@ h2, .h2 {
     font-size: 2em;
 }
 
-button {
+button, .btn {
    font-size: 1.2em;
    padding: 10px 40px;
    background: rgba(60, 15, 104, 0.7);
