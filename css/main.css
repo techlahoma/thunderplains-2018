@@ -97,6 +97,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -132,7 +136,7 @@ button, .btn {
 }
    
 .intro {
-    background: url('../img/header-bg.jpg') bottom center no-repeat;
+    background: url('../img/header-bg.jpg') #3d4949 bottom center no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -143,7 +147,6 @@ button, .btn {
 
 .intro__content {
     text-align: center;
-    text-transform: uppercase;
 }
 
 
