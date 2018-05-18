@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Build files (will generate all files in "./dist" folder)
-npm run build
+NODE_ENV=production npm run build
 
 GIT_REPO_URL=$(git config --get remote.origin.url)
 
