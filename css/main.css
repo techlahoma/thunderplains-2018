@@ -339,3 +339,10 @@ button, .btn {
         page-break-after: avoid;
     }
 }
+
+/**
+ * Added styles of site
+ */
+.intro a {
+  color: white;
+}
