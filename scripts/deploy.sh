@@ -6,7 +6,7 @@ NODE_ENV=production npm run build
 GIT_REPO_URL=$(git config --get remote.origin.url)
 
 cd dist/
-git init -y .
+git init .
 git remote add github $GIT_REPO_URL
 git checkout -b gh-pages
 git add .
