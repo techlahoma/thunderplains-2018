@@ -1,0 +1,68 @@
+@import url('./spectre.min.css');
+@import url('./spectre-exp.min.css');
+
+$btn-primary-bg: #9b4dca;
+$topnav-link-color: #f1d9fc;
+$topnav-link-color-hover: #e793ff;
+
+/**
+ * Globabl styles
+ */
+a {
+  text-decoration: underline;
+}
+
+
+/**
+ * Top navigation bar
+ */
+.topnav {
+  background-color: #333;
+
+  img {
+    height: 45px;
+    margin: 8px;
+  }
+
+  .btn.btn-link {
+    color: $topnav-link-color;
+
+    &:hover, &:active {
+      color: $topnav-link-color-hover;
+    }
+  }
+}
+
+/**
+ * Button overrides
+ */
+.btn {
+  border-color: #dedede;
+
+  &.btn-primary {
+    background: $btn-primary-bg;
+    border-color: #dedede;
+
+    &:hover, &:active {
+      background: lighten($btn-primary-bg, 5%);
+      border-color: #dedede;
+    }
+  }
+}
+
+/**
+ * Added styles of site
+ */
+.intro {
+    background: url('../img/header-bg.jpg') #3d4949 bottom center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+  a {
+    color: white;
+  }
+}
