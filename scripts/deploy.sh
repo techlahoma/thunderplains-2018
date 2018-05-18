@@ -5,6 +5,7 @@ NODE_ENV=production npm run build
 
 GIT_REPO_URL=$(git config --get remote.origin.url)
 
+cp CNAME dist/
 cd dist/
 git init .
 git remote add github $GIT_REPO_URL
