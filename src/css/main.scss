@@ -1,18 +1,49 @@
 @import url('./spectre.min.css');
 @import url('./spectre-exp.min.css');
 
+$link-color: #5755d9;
+
+$bg-light-color: #fff;
+$bg-light-text-color: #222;
+$bg-dark-color: #757871;
+$bg-dark-text-color: #fefefe;
+
 $btn-primary-bg: #9b4dca;
+
+$footer-bg: #333;
+
+$topnav-bg: #333;
 $topnav-link-color: #f1d9fc;
 $topnav-link-color-hover: #e793ff;
+
+$section-width: 980px;
 
 /**
  * Globabl styles
  */
 body {
-  background-color: #757871;
+  background-color: $bg-light-color;
 }
 a {
   text-decoration: underline;
+}
+
+/**
+ * Columns
+ */
+.columns {
+  &.flex-center {
+    justify-content: center;
+    align-items: center;
+
+    .column {
+      text-align: center;
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
 }
 
 
@@ -20,7 +51,7 @@ a {
  * Top navigation bar
  */
 .topnav {
-  background-color: #333;
+  background-color: $topnav-bg;
 
   img {
     height: 45px;
@@ -57,13 +88,13 @@ a {
  * Added styles of site
  */
 .intro {
-    background: url('../img/header-bg.jpg') #3d4949 bottom center no-repeat;
-    background-size: cover;
-    height: calc(100vh - 61px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  padding: 6rem 0;
+  background: url('../img/header-bg.jpg') #3d4949 bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 
   a {
     color: white;
@@ -86,4 +117,52 @@ a {
       }
     }
   }
+}
+
+/**
+ * Section content chunks
+ */
+.section-content {
+  padding: 4rem 0;
+  font-size: 130%;
+
+  &.hr-bottom {
+    border-bottom: 2px solid black;
+  }
+
+  .inside {
+    margin: 0 auto;
+    width: $section-width;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+hr.section-divider {
+  width: $section-width;
+  height: 6px;
+  background: url('../img/hr-12.png') repeat-x 0 0;
+  border: 0;
+}
+
+.bg-light {
+  background-color: $bg-light-color;
+  color: $bg-light-text-color;
+}
+.bg-dark {
+  background-color: $bg-dark-color;
+  color: $bg-dark-text-color;
+
+  a {
+    color: lighten($link-color, 20%);
+  }
+}
+
+footer.credits {
+  background: $topnav-bg;
+  padding: 3rem 0;
+  text-align: center;
 }
