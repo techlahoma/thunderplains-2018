@@ -166,3 +166,19 @@ footer.credits {
   padding: 3rem 0;
   text-align: center;
 }
+
+
+.schedule {
+  &_timeslot {
+    background-color: rgba(60, 15, 104, 0.7);
+    color: #fff;
+  }
+
+  &_track-a {
+    background-color: rgba(155, 77, 202, 0.35);
+  }
+
+  &_track-b {
+    background-color: #ddd;
+  }
+}
