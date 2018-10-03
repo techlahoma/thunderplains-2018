@@ -65,6 +65,12 @@ a {
       color: $topnav-link-color-hover;
     }
   }
+
+  &.secondary {
+    background-color: #444;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+  }
 }
 
 /**
@@ -88,7 +94,7 @@ a {
  * Added styles of site
  */
 .intro {
-  padding: 6rem 0;
+  padding: 3rem 0;
   background: url('../img/header-bg.jpg') #3d4949 bottom center no-repeat;
   background-size: cover;
   display: flex;
@@ -180,5 +186,29 @@ footer.credits {
 
   &_track-b {
     background-color: #ddd;
+  }
+}
+
+.spacer {
+  height: 5rem;
+}
+
+/** Sponsors **/
+.sponsors {
+  .sponsor-gold,
+  .sponsor-silver,
+  .sponsor {
+    padding: 10px;
+    border: 14px solid transparent;
+  }
+
+  .sponsor-gold {
+    border-color: #ffd70066;
+  }
+  .sponsor-silver {
+    border-color: #c0c0c04d;
+  }
+  .sponsor {
+    border-color: #eee;
   }
 }
