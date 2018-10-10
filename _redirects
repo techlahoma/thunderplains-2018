@@ -1,5 +1,7 @@
 # Redirect domain aliases to primary domain
-https://2018.thunderplainsconf.com/* https://thunderplainsconf.com/:splat 301!
+https://thunderplainsconf.com/* https://2018.thunderplainsconf.com/:splat 301!
+https://www.thunderplainsconf.com/* https://2018.thunderplainsconf.com/:splat 301!
+https://www.2018.thunderplainsconf.com/* https://2018.thunderplainsconf.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://suspicious-mcclintock-37184a.netlify.com/* https://thunderplainsconf.com/:splat 301!
+https://suspicious-mcclintock-37184a.netlify.com/* https://2018.thunderplainsconf.com/:splat 301!
