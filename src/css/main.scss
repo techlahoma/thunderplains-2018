@@ -108,6 +108,7 @@ a {
 
   .btn {
     background-color: transparent;
+    border-color: white;
 
     &:hover, &:active {
       border-color: #dedede;
@@ -197,6 +198,7 @@ footer.credits {
 .sponsors {
   .sponsor-gold,
   .sponsor-silver,
+  .sponsor-bronze,
   .sponsor {
     padding: 10px;
     border: 14px solid transparent;
@@ -207,6 +209,9 @@ footer.credits {
   }
   .sponsor-silver {
     border-color: #c0c0c04d;
+  }
+  .sponsor-bronze {
+    border-color: #f2a14f4d
   }
   .sponsor {
     border-color: #eee;
