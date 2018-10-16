@@ -52,10 +52,13 @@ a {
  */
 .topnav {
   background-color: $topnav-bg;
+  justify-content: center;
+  align-items: center;
 
   img {
-    height: 45px;
-    margin: 8px;
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 16px;
   }
 
   .btn.btn-link {
@@ -70,6 +73,30 @@ a {
     background-color: #444;
     padding: 0.5rem 0;
     border-bottom: 1px solid #333;
+  }
+}
+
+.topnav.secondary .navbar-center {
+  margin: 0 auto;
+  flex: auto;
+  flex-direction: column;
+  flex-wrap: wrap;  
+  justify-content: center;
+  align-items: center;
+
+  .center-nav {
+    margin: 0.75rem 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topnav.secondary .navbar-center {
+    margin: 0 auto;
+    flex-direction: row;
+
+    .center-nav {
+      margin: 0 0.75rem;
+    }
   }
 }
 
@@ -88,6 +115,10 @@ a {
       border-color: #dedede;
     }
   }
+}
+
+.ticket-btn {
+  margin: 1rem;
 }
 
 /**
@@ -126,6 +157,21 @@ a {
   }
 }
 
+
+.schedule_talk-title {
+  font-size: 1.1rem;
+  text-decoration: none;  
+}
+
+.schedule_talk-speaker {
+  font-size: 0.8rem;
+}
+
+.schedule-block {
+  text-decoration: none;
+  padding: 2rem 1rem;
+}
+
 /**
  * Section content chunks
  */
@@ -139,17 +185,24 @@ a {
 
   .inside {
     margin: 0 auto;
-    width: $section-width;
+    width: 100%;
+    max-width: $section-width;
+    padding: 0px 1.5rem;
   }
 
   h2 {
     text-align: center;
     margin-bottom: 2rem;
   }
+
+  &#schedule > .inside {
+    padding: 0;
+  }
 }
 
 hr.section-divider {
-  width: $section-width;
+  width: 100%;
+  max-width: $section-width;
   height: 6px;
   background: url('../img/hr-12.png') repeat-x 0 0;
   border: 0;

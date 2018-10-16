@@ -14,23 +14,25 @@
   <body>
 
     <header class="navbar topnav">
-      <section class="navbar-section">&nbsp;</section>
-      <section class="navbar-center">
-        <a href="/"><img src="img/thunder-plains-logo-text-white.png" alt="ThunderPlains Badge Logo" height="45" /></a>
-      </section>
-      <section class="navbar-section">&nbsp;</section>
+        <a href="/"><img id="tp-logo" src="img/thunder-plains-logo-text-white.png" alt="ThunderPlains Badge Logo" /></a>
     </header>
+
+
     <header class="navbar topnav secondary">
-      <section class="navbar-section">&nbsp;</section>
       <section class="navbar-center">
-        <a href="/" class="btn btn-link">Home</a>
-        <a href="#schedule" class="btn btn-link">Schedule</a>
-        <a href="#videos" class="btn btn-link">Videos</a>
-        <a href="https://ti.to/techlahoma/thunderplains-2018" class="btn btn-primary">Get Tickets</a>
-        <a href="#sponsors" class="btn btn-link">Sponsors</a>
-        <a href="https://techlahoma.org/code-of-conduct" class="btn btn-link">Code of Conduct</a>
+        <div class="left-nav">
+          <a href="/" class="btn btn-link">Home</a>
+          <a href="#schedule" class="btn btn-link">Schedule</a>
+          <a href="#videos" class="btn btn-link">Videos</a>
+        </div>
+        <div class="center-nav">
+          <a href="https://ti.to/techlahoma/thunderplains-2018" class="btn btn-primary">Get Tickets</a>
+        </div>
+        <div class="right-nav">
+          <a href="#sponsors" class="btn btn-link">Sponsors</a>
+          <a href="https://techlahoma.org/code-of-conduct" class="btn btn-link">Code of Conduct</a>
+        </div>
       </section>
-      <section class="navbar-section">&nbsp;</section>
     </header>
 
     <!-- 100% width container with max-width set to grid-xl (1280px) -->
@@ -45,7 +47,7 @@
             <br />
             <br />
             <div>
-              <a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/thunderplains-2018">Get Tickets / Register</a>
+              <a class="btn btn-primary btn-lg ticket-btn" href="https://ti.to/techlahoma/thunderplains-2018">Get Tickets / Register</a>
               <a class="btn btn-lg" href="files/2018-ThunderPlains-Sponsorship-Prospectus.pdf">Sponsorship Prospectus</a>
             </div>
           </div>
@@ -423,13 +425,13 @@
             <div class="col-12 schedule_timeslot text-center p-2">8:00 am</div>
           </div>
           <div class="columns">
-            <div class="col-12 text-center p-2">Registration — Coffee & Continental Breakfast</div>
+            <div class="col-12 text-center schedule-block">Registration — Coffee & Continental Breakfast</div>
           </div>
           <div class="columns">
             <div class="col-12 schedule_timeslot text-center p-2">8:45 am</div>
           </div>
           <div class="columns">
-            <a class="col-12 p-2 text-center" href="" data-modal-id="#modal-Jory">
+            <a class="col-12 schedule-block text-center" href="" data-modal-id="#modal-Jory">
               <h3 class="schedule_talk-title">Why'd you have to go and make things so complicated?</h3>
               <h4 class="schedule_talk-speaker">Jory Burson</h4>
             </a>
@@ -438,139 +440,133 @@
             <div class="col-12 schedule_timeslot text-center p-2">9:30 am</div>
           </div>
           <div class="columns">
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-a text-center">Track A</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Adam">
+                <h3 class="schedule_talk-title">The Developer Trail: Adventures Shipping Secure Software</h3>
+                <h4 class="schedule_talk-speaker">Adam Baldwin</h4>
+              </a>
             </div>
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-b text-center">Track B</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Jennifer">
+                <h3 class="schedule_talk-title">Jewelbots: How to Get More Girls Coding!</h3>
+                <h4 class="schedule_talk-speaker">Jennifer Wadella</h4>
+              </a>
             </div>
           </div>
-          <div class="columns">
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Adam">
-              <h3 class="schedule_talk-title">The Developer Trail: Adventures Shipping Secure Software</h3>
-              <h4 class="schedule_talk-speaker">Adam Baldwin</h4>
-            </a>
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Jennifer">
-              <h3 class="schedule_talk-title">Jewelbots: How to Get More Girls Coding!</h3>
-              <h4 class="schedule_talk-speaker">Jennifer Wadella</h4>
-            </a>
-          </div>
+
           <div class="columns">
             <div class="col-12 schedule_timeslot text-center p-2">10:20 am</div>
           </div>
           <div class="columns">
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-a text-center">Track A</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Carmen">
+                <h3 class="schedule_talk-title">At your service with Service Workers</h3>
+                <h4 class="schedule_talk-speaker">Carmen Bourlon</h4>
+              </a>
             </div>
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-b text-center">Track B</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Jesse">
+                <h3 class="schedule_talk-title">Pew Pew!! Set Phasers to Javascript!</h3>
+                <h4 class="schedule_talk-speaker">Jesse Harlin</h4>
+              </a>
             </div>
           </div>
-          <div class="columns">
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Carmen">
-              <h3 class="schedule_talk-title">At your service with Service Workers</h3>
-              <h4 class="schedule_talk-speaker">Carmen Bourlon</h4>
-            </a>
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Jesse">
-              <h3 class="schedule_talk-title">Pew Pew!! Set Phasers to Javascript!</h3>
-              <h4 class="schedule_talk-speaker">Jesse Harlin</h4>
-            </a>
-          </div>
+
           <div class="columns">
             <div class="col-12 schedule_timeslot text-center p-2">11:10 am</div>
           </div>
           <div class="columns">
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-a text-center">Track A</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Joshua">
+                <h3 class="schedule_talk-title">Setting up a proper centralized store for your application</h3>
+                <h4 class="schedule_talk-speaker">Joshua Godi</h4>
+              </a>
             </div>
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-b text-center">Track B</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Kristin">
+                <h3 class="schedule_talk-title">So MANY databases, which one do I pick?</h3>
+                <h4 class="schedule_talk-speaker">Kristin Ferrier</h4>
+              </a>
             </div>
           </div>
-          <div class="columns">
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Joshua">
-              <h3 class="schedule_talk-title">Setting up a proper centralized store for your application</h3>
-              <h4 class="schedule_talk-speaker">Joshua Godi</h4>
-            </a>
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Kristin">
-              <h3 class="schedule_talk-title">So MANY databases, which one do I pick?</h3>
-              <h4 class="schedule_talk-speaker">Kristin Ferrier</h4>
-            </a>
-          </div>
+
           <div class="columns">
             <div class="col-12 schedule_timeslot text-center p-2">12:00 pm</div>
           </div>
           <div class="columns">
-            <div class="col-12 text-center p-2">Lunch</div>
+            <div class="col-12 text-center schedule-block">Lunch</div>
           </div>
           <div class="columns">
             <div class="col-12 schedule_timeslot text-center p-2">1:30 pm</div>
           </div>
           <div class="columns">
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-a text-center">Track A</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Andrey">
+                <h3 class="schedule_talk-title">CRDT and other new ideas for client-server communication</h3>
+                <h4 class="schedule_talk-speaker">Andrey Sitnik</h4>
+              </a>
             </div>
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-b text-center">Track B</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Samantha">
+                <h3 class="schedule_talk-title">Better Layouts with Flexbox + CSS Grids</h3>
+                <h4 class="schedule_talk-speaker">Samantha Provenza</h4>
+              </a>
             </div>
           </div>
-          <div class="columns">
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Andrey">
-              <h3 class="schedule_talk-title">CRDT and other new ideas for client-server communication</h3>
-              <h4 class="schedule_talk-speaker">Andrey Sitnik</h4>
-            </a>
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Samantha">
-              <h3 class="schedule_talk-title">Better Layouts with Flexbox + CSS Grids</h3>
-              <h4 class="schedule_talk-speaker">Samantha Provenza</h4>
-            </a>
-          </div>
+
           <div class="columns">
             <div class="col-12 schedule_timeslot text-center p-2">2:20 pm</div>
           </div>
           <div class="columns">
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-a text-center">Track A</div>
+               <a class="d-block schedule-block" href="" data-modal-id="#modal-Caleb">
+                <h3 class="schedule_talk-title">Embracing the Future of the Web Platform with Web Components</h3>
+                <h4 class="schedule_talk-speaker">Caleb Williams</h4>
+              </a>
             </div>
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-b text-center">Track B</div>
+              <div class="col-6 schedule-block">
+                <h3 class="schedule_talk-title">Lightning Talks</h3>
+                <h4 class="schedule_talk-speaker">You!</h4>
+              </div>
             </div>
           </div>
-          <div class="columns">
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Caleb">
-              <h3 class="schedule_talk-title">Embracing the Future of the Web Platform with Web Components</h3>
-              <h4 class="schedule_talk-speaker">Caleb Williams</h4>
-            </a>
-            <div class="col-6 p-2">
-              <h3 class="schedule_talk-title">Lightning Talks</h3>
-              <h4 class="schedule_talk-speaker">You!</h4>
-            </div>
-          </div>
+
           <div class="columns">
             <div class="col-12 schedule_timeslot text-center p-2">3:10 pm</div>
           </div>
           <div class="columns">
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-a text-center p-1">Track A</div>
+              <a class="d-block schedule-block" href="" data-modal-id="#modal-Yury">
+                <h3 class="schedule_talk-title">Using WebAssembly in *all* the web</h3>
+                <h4 class="schedule_talk-speaker">Yury Delendik</h4>
+              </a>
             </div>
-            <div class="col-6">
+            <div class="col-xs-12 col-6">
               <div class="schedule_track-b text-center p-1">Track B</div>
+              <div class="col-6 schedule-block">
+                <h3 class="schedule_talk-title">Lightning Talks</h3>
+                <h4 class="schedule_talk-speaker">You!</h4>
+              </div>
             </div>
           </div>
-          <div class="columns">
-            <a class="col-6 p-2" href="" data-modal-id="#modal-Yury">
-              <h3 class="schedule_talk-title">Using WebAssembly in *all* the web</h3>
-              <h4 class="schedule_talk-speaker">Yury Delendik</h4>
-            </a>
-            <div class="col-6 p-2">
-              <h3 class="schedule_talk-title">Lightning Talks</h3>
-              <h4 class="schedule_talk-speaker">You!</h4>
-            </div>
-          </div>
+         
           <div class="columns">
             <div class="col-12 schedule_timeslot text-center p-2">4:00 pm</div>
           </div>
           <div class="columns">
-            <a class="col-12 p-2 text-center" href="" data-modal-id="#modal-Dale">
+            <a class="col-12 schedule-block text-center" href="" data-modal-id="#modal-Dale">
               <h3 class="schedule_talk-title">Code the Change You Want to See In the World</h3>
               <h4 class="schedule_talk-speaker">Dale Spoonemore</h4>
             </a>
@@ -579,7 +575,7 @@
             <div class="col-12 schedule_timeslot text-center p-2">5:00 pm</div>
           </div>
           <div class="columns">
-            <div class="col-12 text-center p-2">Closing Remarks</div>
+            <div class="col-12 text-center schedule-block">Closing Remarks</div>
           </div>
 
         </div>
@@ -595,12 +591,12 @@
 
         <div class="container">
           <div class="columns">
-            <div class="column">
+            <div class="column col-xs-12 m-2">
               <div class="video-responsive">
                 <iframe width="425" height="239" src="https://www.youtube-nocookie.com/embed/66KAwhhwOEk?rel=0&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
             </div>
-            <div class="column">
+            <div class="column col-xs-12 m-2">
               <div class="video-responsive">
                 <iframe width="425" height="239" src="https://www.youtube-nocookie.com/embed/C_yj4k4QZVI?rel=0&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
@@ -683,7 +679,7 @@
           <div class="container m-2">
             <div class="columns flex-center">
               <div class="column">
-                <a class="btn btn-primary btn-lg" href="https://ti.to/techlahoma/thunderplains-2018">Buy tickets now</a>
+                <a class="btn btn-primary btn-lg ticket-btn" href="https://ti.to/techlahoma/thunderplains-2018">Buy tickets now</a>
                 <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd0uX-Ufa1x4o3wwFA82RGSQ3wReFB6iNAFrGw1yNi-XIYwnQ/viewform?usp=sf_link">Apply for a free Scholarship Ticket</a>
               </div>
             </div>
