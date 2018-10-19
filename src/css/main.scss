@@ -80,7 +80,7 @@ a {
   margin: 0 auto;
   flex: auto;
   flex-direction: column;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -160,7 +160,7 @@ a {
 
 .schedule_talk-title {
   font-size: 1.1rem;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .schedule_talk-speaker {
@@ -255,6 +255,7 @@ footer.credits {
   .sponsor {
     padding: 10px;
     border: 14px solid transparent;
+    margin: 10px;
   }
 
   .sponsor-gold {
@@ -268,5 +269,11 @@ footer.credits {
   }
   .sponsor {
     border-color: #eee;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sponsors a {
+    display: block;
   }
 }
