@@ -249,6 +249,7 @@ footer.credits {
 
 /** Sponsors **/
 .sponsors {
+  .sponsor-lunch,
   .sponsor-gold,
   .sponsor-silver,
   .sponsor-bronze,
@@ -258,6 +259,9 @@ footer.credits {
     margin: 10px;
   }
 
+  .sponsor-lunch {
+    border-color: #76569566;
+  }
   .sponsor-gold {
     border-color: #ffd70066;
   }
